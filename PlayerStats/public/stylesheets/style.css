@@ -1,0 +1,204 @@
+body {
+
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+
+}
+h2 {
+
+    margin: 0px 0px 0px 15px;
+    padding: 15px 0px 0px 0px;
+    font-size: 22px;
+    font-weight: 100;
+    color: #fff;
+
+}
+h3 {
+
+    margin: -5px 0px 0px 15px;
+    padding: 15px 0px 0px 0px;
+    color: #fff;
+    font-weight: 100;
+    display: inline-block;
+
+}
+p {
+
+    color: #38003c;
+
+}
+.full_frame {
+
+    height: 600px;
+    width: 300px;
+
+}
+
+/* ======================== DROP-DOWN STYLE ======================== */
+
+.drop-down {
+
+    display: inline-block;
+    width:90%;
+    max-width: 275px;
+    height: 40px;
+    margin: 15px;
+    padding: 0px;
+    background-color: #eaeaea;
+    position: relative;
+    z-index: 1;
+
+}
+.drop-down:after {
+
+    content: "";
+    padding: 0px;
+    margin: 0px;
+
+    border-top: 9px dashed #38003c;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 2;
+
+}
+.drop-down > select {
+
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin:0px;
+    padding: 0px 45px 0px 15px;
+    border: 0px;
+    background-color: transparent;
+    color: #000;
+    position: relative;
+    z-index: 3;
+
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    -ms-appearance:     none;
+    appearance:         none;
+
+}
+.drop-down > select > option {
+
+    padding: 10px;
+
+}
+
+/* ================================ PLAYER'S IMAGE SECTION =============================== */
+
+.frame1{
+
+    background-color: #fff;
+    height:240px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+
+}
+
+/* --------------- BACKGROUND IMAGE ----------------- */
+
+.bckg_img {
+
+    margin:0px;
+    padding:0px;
+    float: right;
+    position: static;
+
+}
+
+/* ---------------- PLAYER'S IMAGE ------------------- */
+
+.img_div > img {
+
+    margin:0px 0px 0px 15px;
+    padding:0px;
+    height: 100%;
+    float: left;
+    position: absolute;
+
+}
+
+/* ---------------- TEAM BADGE ---------------- */
+
+.sprite{
+
+    background: url("../images/badges_sprite_resized.jpg") transparent;
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    background-position: 0px 0px;
+
+    float: right;
+    position: absolute;
+    right: 15px;
+    bottom: -50px;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+
+}
+
+/* ================================= PLAYER'S STATS DATA ============================= */
+
+.stats {
+
+    background-color: #e90052;
+    height: 310px;
+
+}
+.stats > ul{
+
+    margin: 15px 0px;
+    padding: 0px;
+
+}
+.stats > ul > li {
+
+    max-width: 275px;
+    height: 40px;
+    margin: 2px 15px;
+    padding: 0px;
+    background-color: #eaeaea;
+    list-style-type: none;
+
+    -webkit-box-shadow: 0 0 2px #000;
+    -moz-box-shadow:    0 0 2px #000;
+    -ms-box-shadow:     0 0 2px #000;
+    box-shadow:         0 0 2px #000;
+
+}
+.stats > ul > li > p {
+
+    padding: 10px;
+    margin: 0px;
+    display: inline-block;
+
+}
+.left{
+
+    float: left;
+
+}
+.right{
+
+    font-weight: bold;
+    font-size: 19px;
+    float: right;
+
+}
+.clear{
+
+    clear: both;
+
+}

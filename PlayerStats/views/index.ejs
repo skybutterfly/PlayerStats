@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+      <link rel="stylesheet" type="text/css" href="../stylesheets/style.css" />
+
+  </head>
+
+  <body>
+
+      <div class="full_frame">
+
+        <!-- *******************************************    DROP-DOWN MENU  ***************************************** -->
+        <div class="drop-down">
+            <select class="image_id" id="input">        <!-- image_id - responsible for getting the correct player's image url -->
+            </select>                                   <!-- input - responsible for fetching the player's name/id from json and listening to selection changes -->
+        </div>
+
+        <!-- ***********************************      PLAYER'S IMAGE & TEAM BADGE     *************************************** -->
+        <div>
+
+            <div class="frame1">
+                <img class="bckg_img" src="../images/bckg_pic.png">         <!--    background image     -->
+                <div class="sprite badge" id="js_badge"></div>              <!--    team badge - sprite image    -->
+                <div class="img_div"></div>                                 <!--    dynamically created img tag that displays player's img   -->
+             </div>
+
+             <!-- **********************************     PLAYER'S STATS DATA     **************************************** -->
+            <div class="stats">
+                <h2 class="name"> </h2>     <!-- first and last name -->
+                <h3 class="pos"></h3>       <!-- position -->
+                <ul>
+                    <li><p class="left clear">Appearances:</p><p class="right appear"></p></li>
+                    <li><p class="left clear">Goals:</p><p class="right goals"></p></li>
+                    <li><p class="left clear">Assists:</p><p class="right assist"></p></li>
+                    <li><p class="left clear">Goals per match:</p><p class="right gpm"></p></li>
+                    <li><p class="left clear">Passes per minutes:</p><p class="right ppm"></p></li>
+                </ul>
+            </div>
+        </div>
+
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+      <script src="../javascripts/main.js"></script>
+
+  </body>
+
+</html>
